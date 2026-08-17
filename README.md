@@ -119,8 +119,3 @@ The application is actively under development, with new AI capabilities being ad
 # Author
 
 Dilip Kumar
-
-```
-
-This matches the **style and level of your Task Manager README** much better: technical and portfolio-ready, while keeping the detailed implementation/process documentation separate.
-```
