@@ -10,7 +10,7 @@ export async function analyzeText(
 
   try {
     const response = await fetch(
-      "http://localhost:5000/api/ai-text",
+      `{NEXT_PUBLIC_API_UR}/api/ai-text`,
       {
         method: "POST",
         headers: {
