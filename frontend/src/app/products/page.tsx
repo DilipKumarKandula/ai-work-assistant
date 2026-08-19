@@ -1,3 +1,6 @@
+import AIConversationPage from "@/features/ai-conversation/page";
 export default function ProductsPage() {
-  return <h1>Products</h1>;
+  return(
+    <AIConversationPage/>
+  )
 }

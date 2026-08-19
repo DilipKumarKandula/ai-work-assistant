@@ -1,3 +1,6 @@
+import AiDocumentPage from "@/features/ai-document/page";
 export default function PricingPage() {
-  return <h1>Pricing</h1>;
+  return(
+    <AiDocumentPage/>
+  );
 }

@@ -117,15 +117,15 @@ export const appConfig: AppConfig = {
   header: {
     items: [
       {
-        label: "Home",
+        label: "AI-Text",
         path: "/",
       },
       {
-        label: "Products",
+        label: "AI Conversation",
         path: "/products",
       },
       {
-        label: "Pricing",
+        label: "AI Document",
         path: "/pricing",
       },
     ],
