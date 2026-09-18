@@ -1,5 +1,184 @@
 # AI Work Assistant
 
+A practical full-stack AI application built to explore **AI Application Engineering** through real features and end-to-end implementation.
+
+The project combines AI text processing, contextual conversations, document intelligence, and Retrieval-Augmented Generation (RAG) into one workspace.
+
+## Features
+
+### AI Text Intelligence
+
+- Summarize
+- Rewrite
+- Extract Key Points
+- Classify
+
+### AI Conversation
+
+- Context-aware conversations
+- Conversation history
+- AI-generated responses
+
+### AI Document Intelligence
+
+- Document upload
+- PDF processing
+- Text extraction
+- Document metadata
+
+### AI Knowledge Chat
+
+- Document ingestion
+- Text chunking
+- Embeddings
+- Semantic search
+- PostgreSQL + pgvector
+- RAG-based answers
+
+## Tech Stack
+
+**Frontend**  
+Next.js · React · TypeScript · Tailwind CSS
+
+**Backend**  
+Node.js · Express.js · TypeScript
+
+**AI**  
+Groq · Hugging Face · Qwen3 Embedding
+
+**Database**  
+PostgreSQL · Supabase · pgvector
+
+**Document Processing**  
+Multer · PDF text extraction
+
+## Architecture
+
+```text
+User
+  ↓
+Next.js Frontend
+  ↓
+Express Backend
+  ├── AI Text → Groq
+  ├── AI Conversation → Groq
+  ├── AI Document → Document Processing
+  └── Knowledge Chat
+        ↓
+      Embeddings
+        ↓
+    PostgreSQL + pgvector
+        ↓
+      Retrieval
+        ↓
+      Groq
+        ↓
+      Answer
+```
+
+The main idea is to connect the UI, APIs, backend services, AI models, and data layer into complete working features.
+
+## Project Structure
+
+```text
+ai-work-assistant/
+├── frontend/
+└── backend/
+```
+
+The frontend contains the Next.js application and feature UI, while the backend contains API routes, controllers, services, AI integrations, and database access.
+
+## Running Locally
+
+### Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Configure the required environment variables before running the application.
+
+## Deployment
+
+- Frontend → Vercel
+- Backend → Render
+- Database → Supabase
+
+## API Endpoints
+
+```text
+POST /api/ai-text
+POST /api/ai-conversation
+POST /api/knowledge-chat
+```
+
+The document processing API is also provided by the backend under `/api`.
+
+## RAG Overview
+
+The Knowledge Chat feature follows a simple RAG pipeline:
+
+```text
+Document
+  ↓
+Chunking
+  ↓
+Embedding
+  ↓
+Vector Storage
+  ↓
+Semantic Retrieval
+  ↓
+Context
+  ↓
+LLM
+  ↓
+Answer
+```
+
+This allows the application to retrieve relevant information from stored document content before generating an answer.
+
+## Project Goal
+
+The goal of this project is not just to build isolated AI demos, but to understand how AI features are integrated into a real application:
+
+```text
+Requirement
+  ↓
+UI
+  ↓
+API
+  ↓
+Backend Logic
+  ↓
+AI / Data Service
+  ↓
+Result
+```
+
+Each major feature was implemented and tested step-by-step so that the architecture and AI concepts could be understood independently.
+
+## Security
+
+Environment variables are used for API keys and database configuration. Secret values should never be committed to GitHub.
+
+## License
+
+Built as a practical AI application demonstrating full-stack development,
+AI API integration, document processing, embeddings, vector search, and RAG.
+
+<!-- # AI Work Assistant
+
 A practical AI application built to learn and implement **AI Application Engineering** concepts through real features.
 
 The application combines text intelligence, AI conversation, document intelligence, and Retrieval-Augmented Generation (RAG) into one reusable AI workspace.
@@ -1098,4 +1277,4 @@ The project is developed feature-by-feature so that each layer can be understood
 
 ## License
 
-This project is intended for learning, experimentation, and portfolio development.
+This project is intended for learning, experimentation, and portfolio development. -->
