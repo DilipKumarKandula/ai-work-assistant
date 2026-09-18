@@ -1,3 +1,4 @@
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 export async function analyzeText(
   text: string,
   operation: string
@@ -10,7 +11,7 @@ export async function analyzeText(
 
   try {
     const response = await fetch(
-      `{NEXT_PUBLIC_API_UR}/api/ai-text`,
+      `${API_BASE_URL}/api/ai-text`,
       {
         method: "POST",
         headers: {

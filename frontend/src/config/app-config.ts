@@ -122,12 +122,17 @@ export const appConfig: AppConfig = {
       },
       {
         label: "AI Conversation",
-        path: "/products",
+        path: "/aiconversation",
       },
       {
         label: "AI Document",
-        path: "/pricing",
+        path: "/aidocuments",
       },
+       {
+      label: "knowledge chat",
+        path: "/knowledge-chat",
+    },
+      
     ],
     position: "right",
   },
@@ -135,19 +140,20 @@ export const appConfig: AppConfig = {
   sidebar: {
   items: [
     {
-      label: "Dashboard",
-      path: "/dashboard",
-      icon: "🏠",
+       label: "AI-Text",
+        path: "/",
     },
     {
-      label: "Users",
-      path: "/users",
-      icon: "👤",
+       label: "AI Conversation",
+        path: "/aiconversation",
     },
     {
-      label: "Reports",
-      path: "/reports",
-      icon: "📊",
+      label: "AI Document",
+        path: "/aidocuments",
+    },
+       {
+      label: "knowledge chat",
+        path: "/knowledge-chat",
     },
     {
       label: "Settings",

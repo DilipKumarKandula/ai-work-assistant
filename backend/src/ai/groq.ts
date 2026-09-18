@@ -1,11 +1,12 @@
 import "dotenv/config";
 import Groq from "groq-sdk";
 
-const groq = new Groq({
+export const groq = new Groq({
   apiKey: process.env.GROQ_API_KEY,
 });
 
 export async function generateText(prompt: string) {
+  console.log("RAG model:", "openai/gpt-oss-120b");
   const response = await groq.chat.completions.create({
     model: "openai/gpt-oss-120b",
     messages: [

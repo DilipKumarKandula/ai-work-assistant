@@ -28,7 +28,7 @@ if (!validOperations.includes(operation)) {
 try {
   const result = await processAiText(text, operation);
 
-  res.json({
+  return res.json({
     success: true,
     result,
   });

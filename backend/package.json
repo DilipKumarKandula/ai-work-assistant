@@ -7,24 +7,39 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
     "build": "tsc",
-    "start": "node src/server.ts"
+    "start": "node dist/server.js",
+    "chunk-test": "tsx src/modules/knowledge-chat/services/chunking.test.ts",
+    "embedding-test": "tsx src/modules/knowledge-chat/services/embedding.test.ts",
+    "document-embedding-test": "tsx src/modules/knowledge-chat/services/document-embedding.test.ts",
+    "db-test": "tsx src/config/database.test.ts",
+    "vector-storage-test": "tsx src/modules/knowledge-chat/services/vector-storage.test.ts",
+    "vector-search-test": "tsx src/modules/knowledge-chat/services/vector-search.test.ts",
+    "retrieval-test": "tsx src/modules/knowledge-chat/services/retrieval.test.ts",
+    "context-test": "tsx src/modules/knowledge-chat/services/context.test.ts",
+    "rag-test": "tsx src/modules/knowledge-chat/services/rag.test.ts",
+    "ingestion-test": "tsx src/modules/knowledge-chat/services/ingestion.test.ts",
+    "ingestion-check": "tsx src/modules/knowledge-chat/services/ingestion-check.test.ts",
+    "document-rag-ingestion-test": "tsx src/modules/knowledge-chat/services/document-rag-ingestion.test.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@huggingface/inference": "^4.13.28",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "groq-sdk": "^1.5.0",
     "multer": "^2.2.0",
-    "pdf-parse": "^2.4.5"
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.23.0"
   },
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.6",
     "@types/multer": "^2.2.0",
     "@types/node": "^26.2.0",
+    "@types/pg": "^8.23.1",
     "tsx": "^4.23.12",
     "typescript": "^7.0.2"
   },
