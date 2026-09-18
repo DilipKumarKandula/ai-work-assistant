@@ -85,14 +85,14 @@ export const appConfig: AppConfig = {
 
   layout: {
     header: {
-      enabled: true,
+      enabled: false,
       height: 80,
       alignment: "left",
       shadow: false,
     },
 
     sidebar: {
-      enabled: true,
+      enabled: false,
       position: "left",
       width: 240,
       collapsedWidth: 64,

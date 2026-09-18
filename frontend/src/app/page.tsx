@@ -77,7 +77,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="max-w-4xl text-5xl font-semibold tracking-[-0.04em] sm:text-6xl lg:text-7xl">
-              AI Work Assistant.
+              AI Workspace
             
             </h1>
 
